@@ -4,6 +4,7 @@
 output
 build
 diff_rasterization/diff_rast.egg-info
+simple_knn/simple_knn.egg-info
 **.egg-info
 **.so
 diff_rasterization/dist
