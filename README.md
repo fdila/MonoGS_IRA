@@ -50,11 +50,25 @@ The method demonstrates the first monocular SLAM solely based on 3D Gaussian Spl
 git clone https://github.com/muskie82/MonoGS.git --recursive
 cd MonoGS
 ```
+
+```
+sudo apt install build-essential
+sudo apt install libgl1
+conda install -c conda-forge cudatoolkit-dev
+export CUDA_HOME=$CONDA_PREFIX
+```
 Setup the environment.
 
 ```
 conda env create -f environment.yml
 conda activate MonoGS
+conda install pyopengl
+```
+
+For headless running:
+
+```
+evo_config set plot_backend agg
 ```
 Depending on your setup, please change the dependency version of pytorch/cudatoolkit in `environment.yml` by following [this document](https://pytorch.org/get-started/previous-versions/).
 
