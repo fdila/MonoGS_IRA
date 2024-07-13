@@ -1,7 +1,7 @@
 inherit_from: "configs/rgbd/otto/base_config.yaml"
 
 Dataset:
-  dataset_path: "datasets/otto/vivaio_1"
+  dataset_path: "/ssd/monogs/datasets/otto/vivaio_1"
   Calibration:
     fx: 906.4804077148438
     fy: 906.260498046875
